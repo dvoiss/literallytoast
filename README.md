@@ -2,6 +2,8 @@
 
 🍞 A toast library for Android.
 
+<img src="https://github.com/dvoiss/literallytoast/blob/master/lit_toast.gif"/>
+
 ### Usage:
 
 👍 Use the `LitToast` to get lit and show your users a **proper toast**.
@@ -27,10 +29,6 @@ Add the dependency in your app `build.gradle`:
 ```
 compile 'com.github.dvoiss:literallytoast:0.0.1'
 ```
-
-### Demo:
-
-<img src="https://github.com/dvoiss/literallytoast/blob/master/lit_toast.gif"/>
 
 ### Features:
 
