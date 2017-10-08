@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <android.support.constraint.Guideline
+      android:id="@+id/top_guideline"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_percent="0.25"/>
+
+  <android.support.constraint.Guideline
+      android:id="@+id/bottom_guideline"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_percent="0.75"/>
+
+  <android.support.constraint.Guideline
+      android:id="@+id/left_guideline"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_percent="0.25"/>
+
+  <android.support.constraint.Guideline
+      android:id="@+id/right_guideline"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_percent="0.75"/>
+
+  <ImageView
+      android:id="@+id/toast"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:contentDescription="@string/toastContentDescription"
+      android:gravity="center"
+      android:src="@drawable/toast"
+      app:layout_constraintBottom_toTopOf="@id/bottom_guideline"
+      app:layout_constraintLeft_toRightOf="@id/left_guideline"
+      app:layout_constraintRight_toLeftOf="@id/right_guideline"
+      app:layout_constraintTop_toBottomOf="@id/top_guideline"/>
+
+  <TextView
+      android:id="@+id/message"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginBottom="32dp"
+      android:layout_marginLeft="32dp"
+      android:layout_marginRight="32dp"
+      android:layout_marginTop="32dp"
+      android:gravity="center"
+      android:shadowColor="@android:color/black"
+      android:shadowDx="2"
+      android:shadowDy="2"
+      android:shadowRadius="1"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:textColor="@android:color/white"
+      app:layout_constraintBottom_toBottomOf="@id/toast"
+      app:layout_constraintLeft_toLeftOf="@id/toast"
+      app:layout_constraintRight_toRightOf="@id/toast"
+      app:layout_constraintTop_toTopOf="@id/toast"
+      tools:text="This is literally just a piece of toast!"/>
+
+</android.support.constraint.ConstraintLayout>

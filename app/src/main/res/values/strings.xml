@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">LiterallyToast</string>
+  <string name="button_text">Gimme toast</string>
+  <string name="toast_demo_text">This is just a piece of toast!</string>
+</resources>
