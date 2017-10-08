@@ -34,6 +34,7 @@ compile 'com.github.dvoiss:literallytoast:0.0.1'
 
 * Show a toast, with the message burned into the toast.
 * Play a toaster sound
+* Feature request? Create an issue or pull request!
 
 ### Road-map:
 
