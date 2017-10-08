@@ -2,6 +2,8 @@
 
 🍞 A toast library for Android.
 
+[![](https://jitpack.io/v/dvoiss/literallytoast.svg)](https://jitpack.io/#dvoiss/literallytoast)
+
 <img src="https://github.com/dvoiss/literallytoast/blob/master/lit_toast.gif"/>
 
 ### Usage:
@@ -27,7 +29,7 @@ allprojects {
 Add the dependency in your app `build.gradle`:
 
 ```
-compile 'com.github.dvoiss:literallytoast:0.0.1'
+compile 'com.github.dvoiss:literallytoast:1.0.0'
 ```
 
 ### Features:
