@@ -12,6 +12,22 @@ LitToast.create(context, "My special toast...", 1000)
   .show();
 ```
 
+Add the jitpack repo to your root `build.gradle`:
+
+```
+allprojects {
+  repositories {
+    maven { url 'https://jitpack.io' }
+  }
+}
+```
+
+Add the dependency in your app `build.gradle`:
+
+```
+compile 'com.github.dvoiss:literallytoast:0.0.1'
+```
+
 ### Demo:
 
 <img src="https://github.com/dvoiss/literallytoast/blob/master/lit_toast.gif"/>
