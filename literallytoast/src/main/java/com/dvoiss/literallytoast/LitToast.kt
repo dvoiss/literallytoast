@@ -13,7 +13,7 @@ import android.widget.TextView
 import com.facebook.rebound.SpringSystem
 
 
-class LToast private constructor(context: Context, text: CharSequence, private val duration: Int,
+class LitToast private constructor(context: Context, text: CharSequence, private val duration: Int,
     private var shouldPlayToasterSound: Boolean) {
 
   private val view: View
@@ -41,7 +41,7 @@ class LToast private constructor(context: Context, text: CharSequence, private v
     }
   }
 
-  fun setPlayToasterSound(shouldPlayToasterSound: Boolean): LToast {
+  fun setPlayToasterSound(shouldPlayToasterSound: Boolean): LitToast {
     this.shouldPlayToasterSound = shouldPlayToasterSound
     return this
   }
@@ -70,12 +70,12 @@ class LToast private constructor(context: Context, text: CharSequence, private v
 
     @JvmStatic
     @JvmOverloads
-    fun create(context: Context, text: CharSequence, duration: Int = LENGTH_SHORT): LToast =
-        LToast(context, text, duration, shouldPlayToasterSound = true)
+    fun create(context: Context, text: CharSequence, duration: Int = LENGTH_SHORT): LitToast =
+        LitToast(context, text, duration, shouldPlayToasterSound = true)
 
     @JvmStatic
     @JvmOverloads
-    fun create(context: Context, @StringRes resId: Int, duration: Int = LENGTH_SHORT): LToast =
+    fun create(context: Context, @StringRes resId: Int, duration: Int = LENGTH_SHORT): LitToast =
         create(context, context.getString(resId), duration)
 
     private fun getTypeface(context: Context): Typeface =
