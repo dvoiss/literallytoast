@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.create(MainActivity.this, R.string.toast_demo_text, 1000)
-                    .setPlaySound(true)
+                    .setPlayToasterSound(true)
                     .show();
             }
         });

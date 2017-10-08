@@ -2,14 +2,13 @@ package com.dvoiss.literallytoast
 
 import android.os.Handler
 import android.view.View
-import android.view.WindowManager
+import android.widget.PopupWindow
 import com.facebook.rebound.SimpleSpringListener
 import com.facebook.rebound.Spring
 import com.facebook.rebound.SpringUtil
 
-internal class ToastSpringListener(private val view: View, private val windowManager: WindowManager,
+internal class ToastSpringListener(private val view: View, private val popupWindow: PopupWindow,
     private val handler: Handler, private val duration: Long) : SimpleSpringListener() {
-
   /**
    * Update the y position of the toast as the spring updates.
    */
@@ -29,7 +28,7 @@ internal class ToastSpringListener(private val view: View, private val windowMan
       handler.postDelayed({ spring.endValue = 0.0 }, duration)
     } else if (spring.endValue <= 0.01) {
       view.visibility = View.GONE
-      windowManager.removeView(view)
+      popupWindow.dismiss()
     }
   }
 }
