@@ -3,7 +3,7 @@ package com.dvoiss.literallytoastdemo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import com.dvoiss.literallytoast.Toast;
+import com.dvoiss.literallytoast.LToast;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.show_toast_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.create(MainActivity.this, R.string.toast_demo_text, 1000)
+                LToast.create(MainActivity.this, R.string.toast_demo_text, 1000)
                     .setPlayToasterSound(true)
                     .show();
             }
