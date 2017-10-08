@@ -13,7 +13,8 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.show_toast_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.create(MainActivity.this, R.string.toast_demo_text, Toast.LENGTH_SHORT)
+                Toast.create(MainActivity.this, R.string.toast_demo_text, 1000)
+                    .setPlaySound(true)
                     .show();
             }
         });
