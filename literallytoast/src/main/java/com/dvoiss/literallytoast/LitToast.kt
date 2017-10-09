@@ -78,8 +78,13 @@ class LitToast private constructor(context: Context, text: CharSequence, private
     fun create(context: Context, @StringRes resId: Int, duration: Int = LENGTH_SHORT): LitToast =
         create(context, context.getString(resId), duration)
 
-    private fun getTypeface(context: Context): Typeface =
-        typeface ?: Typeface.createFromAsset(context.assets, "fonts/yummy_bread.ttf")
+    private fun getTypeface(context: Context): Typeface {
+      if (typeface == null) {
+        typeface = Typeface.createFromAsset(context.assets, "fonts/yummy_bread.ttf")
+      }
+
+      return typeface as Typeface
+    }
 
     // region The values in this region were copied from android.widget.Toast.
 
