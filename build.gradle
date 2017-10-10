@@ -23,3 +23,12 @@ allprojects {
 task clean(type: Delete) {
   delete rootProject.buildDir
 }
+
+ext {
+  cCompileSdkVersion = 26
+  cBuildToolsVersion = "26.0.2"
+  cMinSdkVersion = 21
+  cTargetSdkVersion = 26
+  cVersionCode = 1
+  cVersionName = "1.0"
+}

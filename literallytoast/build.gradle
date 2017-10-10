@@ -2,16 +2,17 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-  compileSdkVersion 26
-  buildToolsVersion "26.0.2"
+  compileSdkVersion cCompileSdkVersion
+  buildToolsVersion cBuildToolsVersion
 
   defaultConfig {
-    minSdkVersion 21
-    targetSdkVersion 26
-    versionCode 1
-    versionName "1.0"
+    minSdkVersion cMinSdkVersion
+    targetSdkVersion cTargetSdkVersion
+    versionCode cVersionCode
+    versionName cVersionName
     testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
   }
+
   buildTypes {
     release {
       minifyEnabled false
