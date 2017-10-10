@@ -27,7 +27,7 @@ task clean(type: Delete) {
 ext {
   cCompileSdkVersion = 26
   cBuildToolsVersion = "26.0.2"
-  cMinSdkVersion = 21
+  cMinSdkVersion = 16
   cTargetSdkVersion = 26
   cVersionCode = 1
   cVersionName = "1.0"
