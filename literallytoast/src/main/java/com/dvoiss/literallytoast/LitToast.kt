@@ -47,19 +47,18 @@ class LitToast private constructor(context: Context, text: CharSequence, private
   }
 
   private fun getDuration(): Long {
-    return if (duration == LENGTH_SHORT) {
-      SHORT_DURATION_TIMEOUT
-    } else if (duration == LENGTH_LONG) {
-      LONG_DURATION_TIMEOUT
-    } else {
-      duration.toLong()
+    return when (duration) {
+        LENGTH_SHORT -> SHORT_DURATION_TIMEOUT
+        LENGTH_LONG -> LONG_DURATION_TIMEOUT
+        else -> duration.toLong()
     }
   }
 
-  private fun setupStyledTextView(context: Context, view: View, text: CharSequence) {
-    val textView = view.findViewById<TextView>(R.id.message)
-    textView.typeface = getTypeface(context)
-    textView.text = text
+  private fun setupStyledTextView(context: Context, view: View, message: CharSequence) {
+    view.findViewById<TextView>(R.id.message).apply {
+      typeface = getTypeface(context)
+      text = message
+    }
   }
 
   private fun getLayoutInflater(context: Context): LayoutInflater = context.getSystemService(
