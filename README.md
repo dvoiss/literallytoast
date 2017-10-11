@@ -8,7 +8,7 @@
 
 ### Usage:
 
-👍 Use the `LitToast` to get lit and show your users a **proper toast**.
+🔥 Use the `LitToast` to get lit and show your users a **proper toast**.
 
 ```java
 LitToast.create(context, "My special toast...", 1000)
@@ -34,15 +34,15 @@ compile 'com.github.dvoiss:literallytoast:1.0.0'
 
 ### Features:
 
-* Show a toast, with the message burned into the toast.
-* Play a toaster sound
-* Feature request? Create an issue or pull request!
+* 🍞🔥 Show a toast, with the message burned into the toast.
+* 🔊 Play a toaster sound
+* 👍 Feature request? Create an issue or pull request!
 
 ### Road-map:
 
-* Variation with Jesus image on toast (on road-map)
-* Different types of toast (French toast, Avocado?)
-* There is no toast queue to set up multiple toasts. A toaster class (queue) should be written, the queue should only allow for two toasts because most toasters only handle that (unless you've got 💰)
+* 🙏 Variation with Jesus image on toast
+* 🥖 🥐 French toast? Different types of toast (🥑 Avocado?)
+* 😢 There is no toast queue to set up multiple toasts. A toaster class (queue) should be written, the queue should only allow for two toasts because most toasters only handle that (unless you've got 💰)
 
 Resources used:
 
